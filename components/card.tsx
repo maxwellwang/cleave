@@ -3,7 +3,7 @@ import tenzMouse from "../assets/tenz-mouse.webp";
 
 export default function Card() {
   return (
-    <div className="card w-96 bg-base-100 shadow-xl">
+    <div className="card w-96 bg-black shadow-xl">
       <figure>
         <Image src={tenzMouse} alt="Tenz mouse" />
       </figure>
