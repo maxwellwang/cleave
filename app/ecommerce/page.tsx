@@ -1,7 +1,9 @@
-export default function Home() {
+import Card from "@/components/card";
+
+export default function Ecommerce() {
   return (
     <main className="flex min-h-screen flex-col items-center p-24">
-      <p className="text-4xl font-bold">Hello, world!</p>
+      <Card />
     </main>
   );
 }
