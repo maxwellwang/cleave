@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Menu() {
   return (
-    <ul className="menu">
+    <ul className="menu menu-compact lg:menu-normal">
       <li>
         <Link href="/">Home</Link>
       </li>
