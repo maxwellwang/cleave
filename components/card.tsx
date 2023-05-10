@@ -1,12 +1,17 @@
-import Image from "next/image";
+import { Prisma } from "@prisma/client";
 
-export default function Card() {
+interface Product {
+  title: string;
+  price: Prisma.Decimal;
+}
+
+export default function Card({ title, price }: Product) {
   return (
-    <div className="card w-96 bg-neutral shadow-xl">
-      <div className="card-body">
-        <h2 className="card-title">Gaming Mouse</h2>
-        <p>State of the art mouse, rank up or your money back!</p>
-        <div className="card-actions justify-end">
+    <div className="card w-96 bg-base-100 shadow-xl">
+      <div className="card-body items-center text-center">
+        <h2 className="card-title">{title}</h2>
+        <p>${price.toString()}</p>
+        <div className="card-actions">
           <button className="btn btn-primary">Buy Now</button>
         </div>
       </div>
